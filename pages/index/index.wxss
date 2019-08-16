@@ -1,0 +1,17 @@
+/**index.wxss**/
+.context {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.index-logo {
+  width: 480rpx;
+  height: 480rpx;
+}
+.index-info {
+  margin-top: 100rpx;
+}
+.index-btn {
+  background-color: #fff;
+  border: 1rpx solid #000;
+}

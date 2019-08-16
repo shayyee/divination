@@ -1,0 +1,9 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="context">
+    <image class="index-logo" src="../images/logo.png" background-size="cover"></image>
+  </view>
+  <view class="index-info">
+   <button class="index-btn" bindtap="toCalculate">开始卜卦</button>
+  </view>
+</view>

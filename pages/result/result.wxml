@@ -1,0 +1,12 @@
+<view class="container">
+  <view class="result-img">
+    <canvas canvas-id="res"></canvas>
+  </view>
+  <text class="result-text">{{resultText}}</text>
+  <view class="result-content">
+    <text>解卦：</text>
+    <view class="explain">
+      <rich-text type="text" nodes="{{resultExplain}}"></rich-text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,16 @@
+<view class="container">
+  <view class="shake" wx:if="{{tqList.length === 0}}">
+    <image class="img-shake" src="../images/shake.png" mode="aspectFit"></image>
+    <view class="text">
+      <text>摇一摇依次掷出6枚铜钱</text>
+    </view>
+  </view>
+  <view class="wrap-tq" wx:else>
+    <view class="tq">
+      <image wx:for="{{tqList}}" wx:key="{{index}}" class="img-tq" src="{{item === 1?'../images/tongqian1.gif':'../images/tongqian0.gif'}}" mode="aspectFit"></image>
+    </view>
+  </view>
+  <view class="wrap-btn" wx:if="{{tqList.length === 6}}">
+    <button class="cal-btn" bindtap="toResult">查看结果</button>
+  </view>
+</view>
